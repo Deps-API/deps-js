@@ -1,0 +1,66 @@
+{
+  "name": "@deps-api/deps-js",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Isomorphic TypeScript client for the Deps API",
+  "main": "./dist/deps-client.umd.js",
+  "module": "./dist/deps-client.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "pretest": "pnpm build",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "generate:types": "openapi-typescript openapi.json -o src/core/types.ts"
+  },
+  "keywords": [
+    "deps",
+    "api",
+    "client",
+    "typescript",
+    "isomorphic"
+  ],
+  "author": "Deps API & Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deps-API/deps-js.git"
+  },
+  "homepage": "https://github.com/Deps-API/deps-js",
+  "bugs": {
+    "url": "https://github.com/Deps-API/deps-js/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "ofetch": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "8.37.0",
+    "@typescript-eslint/parser": "8.37.0",
+    "@vitest/coverage-v8": "3.2.4",
+    "dotenv": "^17.2.0",
+    "eslint": "9.31.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.3",
+    "jsdom": "^26.1.0",
+    "openapi-typescript": "7.8.0",
+    "prettier": "3.6.2",
+    "typescript": "5.8.3",
+    "vite": "7.0.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "3.2.4"
+  }
+}
