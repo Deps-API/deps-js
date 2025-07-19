@@ -11,4 +11,4 @@ describe.skipIf(shouldSkip)('E2E - Status', () => {
     expect(status).toBeDefined();
     expect(typeof status.timestamp).toBe('number');
   });
-}); 
+});

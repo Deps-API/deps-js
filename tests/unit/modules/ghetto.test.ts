@@ -14,4 +14,4 @@ describe('Ghetto Module', () => {
       query: params,
     });
   });
-}); 
+});

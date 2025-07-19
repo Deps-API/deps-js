@@ -1,4 +1,4 @@
-import { ofetch, FetchOptions } from 'ofetch';
+import { ofetch } from 'ofetch';
 import { DepsApiError, ValidationError } from './errors';
 
 export interface ApiConfig {
@@ -16,9 +16,17 @@ export const createHttpClient = (config: ApiConfig) => {
     },
     async onResponseError({ response }) {
       if (response.status === 422) {
-        throw new ValidationError(response.status, response.statusText, response._data);
+        throw new ValidationError(
+          response.status,
+          response.statusText,
+          response._data
+        );
       }
-      throw new DepsApiError(response.status, response.statusText, response._data?.error_message);
+      throw new DepsApiError(
+        response.status,
+        response.statusText,
+        response._data?.error_message
+      );
     },
   });
-}; 
+};

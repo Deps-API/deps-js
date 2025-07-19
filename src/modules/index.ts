@@ -7,4 +7,4 @@ export { default as fractions } from './fractions';
 export { default as ghetto } from './ghetto';
 export { default as map } from './map';
 export { default as families } from './families';
-export { default as status } from './status'; 
+export { default as status } from './status';

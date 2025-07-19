@@ -14,4 +14,4 @@ describe('Sobes Module', () => {
       query: params,
     });
   });
-}); 
+});

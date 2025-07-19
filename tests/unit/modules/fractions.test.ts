@@ -24,4 +24,4 @@ describe('Fractions Module', () => {
       query: params,
     });
   });
-}); 
+});

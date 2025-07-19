@@ -6,4 +6,4 @@ export const mockClient = Object.assign(mockFetch, {
   raw: vi.fn(),
   native: vi.fn(),
   create: vi.fn(),
-}); 
+});

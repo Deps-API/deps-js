@@ -26,3 +26,6 @@ Thumbs.db
 
 # Tests
 /coverage
+
+# Environment variables
+.env

@@ -14,4 +14,4 @@ describe('Map Module', () => {
       query: params,
     });
   });
-}); 
+});

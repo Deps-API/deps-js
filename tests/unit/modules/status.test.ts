@@ -12,4 +12,4 @@ describe('Status Module', () => {
       method: 'GET',
     });
   });
-}); 
+});

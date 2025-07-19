@@ -24,4 +24,4 @@ describe('Leadership Module', () => {
       query: params,
     });
   });
-}); 
+});

@@ -29,4 +29,4 @@ export class DepsClient {
     this.families = modules.families(this.client);
     this.status = modules.status(this.client);
   }
-} 
+}

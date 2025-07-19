@@ -14,4 +14,4 @@ describe('Online Module', () => {
       query: params,
     });
   });
-}); 
+});

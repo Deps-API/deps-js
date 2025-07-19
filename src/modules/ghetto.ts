@@ -23,12 +23,11 @@ type GhettoGetEndpoint = {
 
 export default (client: $Fetch) => ({
   get: (params: GhettoGetEndpoint['parameters']['query']) => {
-    return client<GhettoGetEndpoint['responses']['200']['content']['application/json']>(
-      '/v2/ghetto',
-      {
-        method: 'GET',
-        query: params,
-      }
-    );
+    return client<
+      GhettoGetEndpoint['responses']['200']['content']['application/json']
+    >('/v2/ghetto', {
+      method: 'GET',
+      query: params,
+    });
   },
-}); 
+});

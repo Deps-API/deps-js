@@ -1,6 +1,7 @@
 {
   "name": "@deps-api/deps-js",
   "version": "1.0.0",
+  "type": "module",
   "private": false,
   "description": "Isomorphic TypeScript client for the Deps API",
   "main": "./dist/deps-client.umd.js",
@@ -54,6 +55,8 @@
     "eslint": "9.31.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.3",
+    "typescript-eslint": "^8.37.0",
+    "@eslint/js": "^9.10.0",
     "jsdom": "^26.1.0",
     "openapi-typescript": "7.8.0",
     "prettier": "3.6.2",

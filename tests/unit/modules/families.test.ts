@@ -24,4 +24,4 @@ describe('Families Module', () => {
       query: params,
     });
   });
-}); 
+});
